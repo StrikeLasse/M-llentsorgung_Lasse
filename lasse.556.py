@@ -61,8 +61,9 @@ woche52 = [32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 3
 
 wochen = [woche0, woche1, woche2, woche3, woche4, woche5, woche6, woche7, woche8, woche9, woche10, woche11, woche12, woche13, woche14, woche15, woche16, woche17, woche18, woche19, woche20, woche21, woche22, woche23, woche24, woche25, woche26, woche27, woche28, woche29, woche30, woche31, woche32, woche33, woche34, woche35, woche36, woche37, woche38, woche39, woche40, woche41, woche42, woche43, woche44, woche45, woche46, woche47, woche48, woche49, woche50, woche51, woche52]
 
-nutzer_eingabe = int(input("Gib eine woche ein mit einem wert von 1 bis 52 direkt hinter der woche, z.B woche34: "))
+nutzer_eingabe = int(input("Gib einen wert von 1 bis 52 ein:  "))
 
 for wert in wochen[nutzer_eingabe]:
     print(wert)
+
 

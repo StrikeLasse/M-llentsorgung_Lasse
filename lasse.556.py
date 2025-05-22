@@ -2,7 +2,7 @@
 # Ich nutzte Beispielwerte die ich speichere in Listen um vergangene Sensorenwerte als Beispiele zu nutzen,
 # wie als wären sie gemessen worden in vergangenen Messwerten
 # 21 Werte pro Woche, da sie 3 mal pro Tag scannen
-# Zeile 8-47 ist von Chat-GPT erstellt worden ("https://chatgpt.com/")
+# Zeile 7-60 ist von Chat-GPT erstellt worden ("https://chatgpt.com/") und in Zeile 62 alle werte.
 
 woche0 = [5, 12, 23, 45, 89, 101, 151, 3, 28, 49, 77, 90, 111, 132, 149, 150, 2, 15, 31, 55, 88]
 woche1 = [5, 12, 23, 45, 89, 101, 151, 3, 28, 49, 77, 90, 111, 132, 149, 150, 2, 15, 31, 55, 88]
@@ -65,5 +65,4 @@ nutzer_eingabe = int(input("Gib einen wert von 1 bis 52 ein:  "))
 
 for wert in wochen[nutzer_eingabe]:
     print(wert)
-
 

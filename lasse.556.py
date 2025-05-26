@@ -4,6 +4,14 @@
 # 21 Werte pro Woche, da sie 3 mal pro Tag scannen
 # Zeile 7-60 ist von Chat-GPT erstellt worden ("https://chatgpt.com/") und in Zeile 62 alle werte.
 
+
+
+NOCH SCHREIBEN DASS ES PAAR LISTEN AUCH NOCH GEBEN WIRD WO DIE LETZTEN PAAR WERTE IDENTISCH SIND UND SOMIT NICHT DIE GESAMTE WOCHE DAS MUSS NOCH HINZUGEFÜGT WERDEN
+
+
+
+
+
 woche0 = [5, 12, 23, 45, 89, 101, 151, 3, 28, 49, 77, 90, 111, 132, 149, 150, 2, 15, 31, 55, 88]
 woche1 = [5, 12, 23, 45, 89, 101, 151, 3, 28, 49, 77, 90, 111, 132, 149, 150, 2, 15, 31, 55, 88]
 woche2 = [7, 18, 30, 41, 99, 120, 140, 4, 22, 50, 73, 85, 108, 125, 143, 148, 1, 19, 33, 58, 92]
@@ -45,7 +53,6 @@ woche37 = [68, 87, 99, 104, 126, 142, 149, 35, 75, 107, 115, 120, 134, 146, 153,
 woche38 = [70, 89, 101, 106, 128, 144, 150, 37, 77, 109, 117, 122, 136, 148, 155, 159, 50, 76, 90, 114, 149]
 woche39 = [72, 91, 103, 108, 130, 146, 152, 39, 79, 111, 119, 124, 138, 150, 156, 160, 52, 78, 92, 116, 151]
 woche40 = [74, 93, 105, 110, 133, 148, 154, 41, 81, 113, 121, 126, 140, 152, 158, 161, 54, 80, 94, 118, 153]
-
 woche41 = [21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21]
 woche42 = [22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]
 woche43 = [23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23]
@@ -63,6 +70,19 @@ wochen = [woche0, woche1, woche2, woche3, woche4, woche5, woche6, woche7, woche8
 
 nutzer_eingabe = int(input("Gib einen wert von 1 bis 52 ein:  "))
 
+print("Dies sind die ausgegebenen Werte: ")
 for wert in wochen[nutzer_eingabe]:
     print(wert)
 
+werte_liste = wochen[nutzer_eingabe]
+
+
+    
+if len(set(werte_liste)) == 1:  
+    print("Alle Werte sind identisch und sollten dringend überprüft werden, da der Füllstand von den Sensoren über eine Woche unverändert bleibt.")
+else: print("Die Werte sind nicht identisch, somit muss keine Überprüfung stattfinden.")
+
+
+
+if werte_liste[-9:] == [werte_liste[-1]] * 9:
+    print("Die letzten 9 Messungen, also die Werte der letzten 3 Tage sind identisch. Vorsicht dennoch, da die Besitzer eventuell nicht zuhause sind und somit keine Überprüfung aufrund des nichtigen Verbrauchs nötig ist2.")

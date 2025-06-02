@@ -2,11 +2,11 @@
 # Ich nutzte Beispielwerte die ich speichere in Listen um vergangene Sensorenwerte als Beispiele zu nutzen,
 # wie als wären sie gemessen worden in vergangenen Messwerten
 # 21 Werte pro Woche, da sie 3 mal pro Tag scannen
-# Zeile 7-60 ist von Chat-GPT erstellt worden ("https://chatgpt.com/") und in Zeile 62 alle werte.
+# Zeile 15-67 ist von Chat-GPT erstellt worden ("https://chatgpt.com/") und in Zeile 69 alle werte.
 
 
 
-NOCH SCHREIBEN DASS ES PAAR LISTEN AUCH NOCH GEBEN WIRD WO DIE LETZTEN PAAR WERTE IDENTISCH SIND UND SOMIT NICHT DIE GESAMTE WOCHE DAS MUSS NOCH HINZUGEFÜGT WERDEN
+
 
 
 
@@ -79,10 +79,10 @@ werte_liste = wochen[nutzer_eingabe]
 
     
 if len(set(werte_liste)) == 1:  
-    print("Alle Werte sind identisch und sollten dringend überprüft werden, da der Füllstand von den Sensoren über eine Woche unverändert bleibt.")
+    print("Alle Werte sind identisch und sollten dringend überprüft werden, da der Füllstand von den Sensoren über eine Woche unverändert blieb.")
 else: print("Die Werte sind nicht identisch, somit muss keine Überprüfung stattfinden.")
 
 
 
 if werte_liste[-9:] == [werte_liste[-1]] * 9:
-    print("Die letzten 9 Messungen, also die Werte der letzten 3 Tage sind identisch. Vorsicht dennoch, da die Besitzer eventuell nicht zuhause sind und somit keine Überprüfung aufrund des nichtigen Verbrauchs nötig ist2.")
+    print("Die letzten 9 Messungen, also die Werte der letzten 3 Tage sind identisch. Vorsicht dennoch, da die Besitzer eventuell nicht zuhause sind und somit keine Überprüfung aufgrund des fehlenden Verbrauchs nötig ist, dennoch sollte die zukünftigen Füllstände weiter überprüft werden.")
